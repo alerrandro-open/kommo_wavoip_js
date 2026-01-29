@@ -1,13 +1,13 @@
-define([], function () {
+define(function () {
   return function () {
     this.callbacks = {
       init: function () {
-        console.log('[WIDGET] init OK');
+        console.log('[KOMMO TEST] init OK');
         return true;
       },
 
       render: function () {
-        console.log('[WIDGET] render OK');
+        console.log('[KOMMO TEST] render OK');
 
         if (this.widgets && this.widgets.add_action) {
           this.widgets.add_action('card', {
